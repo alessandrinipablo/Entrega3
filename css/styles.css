@@ -1,0 +1,583 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Aplico la fuente que baje de Google Fonts*/
+body {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 16px;
+    margin: 10px;
+    border: 2px solid;
+
+}
+
+/* Estilos al Header  */
+header {
+    display: flex;
+    width: 99%;
+    margin: 10px;
+    height: auto;
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: #d3cfcf;
+    border:1px solid rgb(219, 218, 215) ;
+    box-shadow: 0 0 10px rgba(70, 69, 69, 0.1); 
+    border-radius: 5px;
+  
+}
+
+/*  Estilos al h1 del nombre de la empresa que lo puse en la la barra de navegacion */
+div h1{
+    color:rgb(36, 36, 36);
+    margin: 0; 
+}
+
+
+
+/* Estilos a la barra de navegacion. */
+nav ul {
+    list-style: none; 
+    padding: 0; 
+    display: flex; 
+    justify-content: right;
+}
+
+
+
+/* Estilos cuando el mouse pasa sobre la barra de navegacion */
+    nav ul li:hover {
+         border-radius: 05px;
+         background-color: rgba(30, 31, 30, 0.521); 
+         cursor: pointer; 
+         color: #f7f2f2; 
+}
+
+/*  Un poco de espacio entre los botones de navegacion entre paginas */
+nav li {
+    margin-right: 30px; 
+}
+
+
+nav a {
+    text-decoration: none; 
+    color: #080808; 
+    font-size: 1rem;
+}
+
+/* Estilo al footer */
+footer {
+    display: flex;
+    align-items: center; 
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #f0f0f0; 
+    color: #3a3939; }
+
+
+
+.derechos-reservados {
+
+    margin-right:10px;
+}
+
+.redes {
+    display: flex;
+    gap: 10px; 
+}
+
+.redes img {
+ 
+    width: 30px;  
+    height: 30px;  
+}
+
+/*  Estilos a la pagina de index */
+
+/* Grids  */
+.contenedor_index_ad {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "info info ad"
+        "info info ad"
+        "info info ad"
+        "info info ad";
+    padding: 20px; 
+    background-color: #f2f2f2; 
+}
+  
+  .info { 
+    grid-area: info; 
+}
+  
+  .ad {
+     grid-area: ad; 
+    }
+
+    .info {
+        grid-area: info;
+        padding: 20px;
+        background-color: #ffffff;   
+        border-radius: 8px;  
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+    }
+
+    article {
+        height: 90%; 
+        margin: 10px;
+        padding: 20px;
+        border-radius: 8px; 
+        background-color: #fff; 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    }
+
+
+    .ad {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 20px;
+        background-color: #ffffff; 
+        border-radius: 8px; 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    }
+    
+     .ad-1, .ad-2{
+        background: #979ea0;
+        margin-bottom:40px;
+        padding: 100px;
+        width:90%;
+        height:45%;
+        border: 1px solid rgb(56, 56, 56);
+        border-radius: 10px;
+        text-align: center;
+        align-self: center;
+        align-items: center;
+        font-weight: bold;
+    }
+
+/* Estilo a todas las secciones del index, y para tener nocion de la separacion. */
+.seccion_imagenes,
+.seccion_videos,
+.seccion_mapas {
+    border: 1px solid rgb(56, 56, 56);
+    padding: 20px;
+    background-color: #ffffff; 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.seccion_videos{
+    display: flex;
+    flex-direction: row;
+    padding: 2px;   
+}
+
+.mapa{
+    width: 100%;
+}
+
+.video1, .video2 {
+    flex-grow: 1;
+    margin: 0 5px;
+  }
+
+.img-Index{
+    width:210px;
+    height: 160px;
+}
+.tituloTarjetaIndex{
+    text-align: center;
+}
+
+/* Estilos para pagina Analisis de datos */
+
+
+/*  contenedor de formulario que activa la tabla (activaria) */
+.formulario{
+    display: flex;
+    flex-direction:row; 
+    align-items:center; 
+    max-width: 400px;
+    margin-right: 20px; 
+}
+
+/* contenedor donde esta la tabla */
+.tablas{
+    border:1px solid rgb(114, 113, 113,0.2);
+    width: auto;
+}
+
+/*  estilos a la tabla */
+table{
+    color:#272626;
+    font-size: 14px;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 1px solid;
+}
+
+thead{
+    background-color: #969393;
+}
+
+th{
+    padding: 20px 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+td{
+    padding: 15px;
+    border-bottom: solid 1px ;
+    text-align: center;
+}
+
+tbody tr{
+    cursor: pointer;
+
+}
+tbody tr:hover{
+    background:rgb(211, 209, 209);
+}
+
+
+/*  activo flex, entre el formulario y la tabla de la pagina analisis de datos */
+#analisis_datos {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.formulario,
+.tablas {
+    width: 50%;
+    padding: 0px;
+}
+
+.formulario{
+    background: url("../img/analisis_datos.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.analisis{
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #f5f1f1;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.h2_formulario{
+    background-color: #525050;
+}
+
+.analisis label,
+.analisis select,
+.analisis input {
+    width: 100%; 
+
+}
+
+.conclusion{
+    border: 1px solid ;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    line-height: 2;
+    padding: 20px;
+    margin: 50px;
+
+}
+
+/*  Estilos servicios */
+
+.img_tar{
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center center;
+}
+
+.contenedor_tarjetas{
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 1000px;
+
+}
+
+.tarjetas_servicios{
+    width: 100%;
+    margin: 20px;
+    border-radius: 06px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+
+}
+
+
+.tarjetas_servicios:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: translateY(-3%);
+
+}
+
+
+.tarjetas_servicios .contenido{
+    padding: 15px;
+    text-align: center;
+
+}
+
+.tarjetas_servicios .contenido p{
+    line-height: 1.5;
+    color:#6a6a6a;
+
+}
+
+.tarjetas_servicios .contenido h3{
+    font-weight: 400;
+    margin-bottom: 15px;
+
+}
+
+.tarjetas_servicios .contenido a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #2fb4cc;
+    border: 1px solid #2fb4cc;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+
+.tarjetas_servicios .contenido a:hover{
+    background:#2fb4cc; 
+    color: #FFf;
+
+}
+
+.datos_contacto{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid rgb(155, 154, 154);
+}
+
+.datos_contacto p{
+    line-height: 1.5;
+}
+
+/*  estilos paginas noticias */
+.noticias{
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid rgb(155, 154, 154);
+}
+
+.noticias a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #2fb4cc;
+    border: 1px solid #2fb4cc;
+    border-radius: 4px;
+    transition: all 400ms ease;
+
+}
+
+.noticias a:hover{
+    background:#295e68; 
+    color: #FFf;
+
+}
+
+/*  estilos pagina contacto. */
+.contenedor_contacto{
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    margin: 10px;
+    padding: 10px;
+}
+
+
+
+/* Medias Queries */
+
+
+/* Medias Queries Aplicada a la pagina de inico */
+
+
+@media (max-width: 960px) {
+    /* Ocultar el h1 en pantallas más pequeñas */
+    div h1 {
+      display: none;
+    }
+
+}
+/* tablets */
+@media (max-width: 740px) {
+    /* Ocultar el h1 en pantallas más pequeñas */
+    .logo {
+      display: none;
+    }
+
+    nav ul{
+        justify-items: center;
+
+
+    }
+    .contenedor_index_ad {
+        display: grid;
+        grid-template-columns:  1fr 1fr;
+        grid-template-rows:1fr 1fr;
+        gap: 5px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            " info info"
+            " info info"
+            " ad ad"
+            " ad ad";
+        padding: 20px; 
+        background-color: #f2f2f2; 
+    }
+
+}
+
+/* celulares */
+
+@media (min-width:350px) and (max-width:660px){
+    /* estilos al Header */
+    header {
+        margin:0;
+        background-color: #cecece;
+    }
+
+    /*  Barra de navegacion en Columna, alineo a la izquierda */
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 350px;
+        
+    }
+    /*  Aumento el tamaño de la barra de navegacion */
+    nav li a{
+        font-size: 2rem;
+     
+    }
+
+    /*  videos uno debajo del otro. */
+    .seccion_videos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*Footer en flex orientacion columnas.*/
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Seccion inicio presentacion*/
+
+    .noticias p{
+        font-size: 1.5rem;
+        line-height: 1.5;
+   
+    }
+    .noticias{
+        overflow: hidden;
+    }
+
+    nav ul li a:hover{
+        cursor: pointer;
+    }
+    
+}
+
+
+/* Medias Queries Pagina Analisis de Datos */
+
+/* Celulares*/
+
+
+@media (min-width:350px) and (max-width:660px){
+
+    .formulario{
+        width:100%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        border-radius: 5px;
+    }
+
+    .analisis{
+        width: 70%;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .tablas{
+        width: 100%;
+    }
+    table{
+        width: 90%;
+        margin-left: 50px;
+        margin-right: 50px;
+
+    }
+
+    td,th{
+        text-align: center;
+        font-size: 0.65rem;
+        padding: 03px;
+        margin: 3px;
+        text-transform: lowercase;
+    }
+}
+
+/* tablets */
+
+@media (min-width:661px) and (max-width:987px){
+    .formulario{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .analisis{
+        width: 100%;
+        align-items:flex-start;
+        justify-content:flex-start;
+
+
+    }
+    .tablas{
+        width: 100%;
+    }
+    table{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .conclusion{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
