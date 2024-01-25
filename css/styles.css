@@ -51,6 +51,7 @@ tbody tr:hover {
 #analisis_datos {
   width: 90%;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-end;
   margin-right: 25px;
@@ -432,7 +433,23 @@ main {
 }
 
 /* Medias Queries */
-/* Medias Queries Aplicada a la pagina de inico */
+@media (max-width: 1120px) {
+  #analisis_datos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+  #analisis_datos .formulario, #analisis_datos .tabla {
+    width: 75%;
+  }
+  #analisis_datos .formulario {
+    margin: 15px 60px;
+  }
+  #analisis_datos .tablas {
+    margin: 10px 0px;
+  }
+}
 /* Dispositivos medios-grandes. */
 @media only screen and (max-width: 951px) {
   main {
@@ -500,12 +517,10 @@ main {
     justify-content: center;
     align-items: center;
   }
-  /*  videos uno debajo del otro. */
   .seccion_videos {
     display: flex;
     flex-direction: column;
   }
-  /* Seccion inicio presentacion*/
   .noticias p {
     font-size: 1.5rem;
     line-height: 1.5;
@@ -523,6 +538,10 @@ main {
     margin: 10px 40px;
     flex-direction: column;
   }
+  main {
+    width: 90%;
+    margin: 0px 0px;
+  }
   .logo {
     flex-direction: column;
     margin: 0px 40px;
@@ -534,6 +553,10 @@ main {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+  }
+  table, th, td, tr {
+    padding: 1px;
+    margin: 1px;
   }
   footer {
     display: flex;

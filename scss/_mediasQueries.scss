@@ -1,8 +1,29 @@
 /* Medias Queries */
+@media   (max-width: 1120px) {
+    
+    #analisis_datos{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: start;
+    
+        
+        .formulario,.tabla{
+            width: 75%;
+        }
 
+        .formulario{
+            margin: 15px 60px ;
+        }
 
-/* Medias Queries Aplicada a la pagina de inico */
+        .tablas{
+            margin: 10px 0px;
+        }
+  
 
+    }
+    
+}
 
 /* Dispositivos medios-grandes. */
 
@@ -68,7 +89,12 @@
         margin-right: 05px;
     }
 
+
+
+
+
 }
+
 @media only screen and (max-width: 951px) {
     .contenedor_tarjetas {
         display: flex;
@@ -94,7 +120,6 @@
     }
 
 
-    /*  videos uno debajo del otro. */
     .seccion_videos{
         display: flex;
         flex-direction: column;
@@ -102,7 +127,6 @@
 
 
 
-    /* Seccion inicio presentacion*/
 
     .noticias p{
         font-size: 1.5rem;
@@ -126,12 +150,18 @@
 // Dispositivos Chicos
 @media (min-width: 300px) and (max-width: 599px) {
 
+    
     header {
         padding: 45px;
         margin: 10px 40px;
         flex-direction: column;
-      
+          }
+
+    main{
+        width: 90%;
+        margin: 0px 0px;
     }
+
     .logo{
         flex-direction:column;
         margin: 0px 40px;
@@ -140,11 +170,17 @@
         justify-items: center;
     
     }
+    
 
     .info>h2, .noticias, .noticias_hijas >h3, .noticias_hijas >p,.datos_contacto {
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
+    }
+
+    table, th, td, tr{
+        padding: 1px;
+        margin: 1px;
     }
 
     footer{

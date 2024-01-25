@@ -56,6 +56,7 @@
   #analisis_datos {
     width: 90%;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-end;
     margin-right: 25px;
