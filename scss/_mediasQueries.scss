@@ -4,65 +4,95 @@
 /* Medias Queries Aplicada a la pagina de inico */
 
 
-@media (max-width: 960px) {
-    /* Ocultar el h1 en pantallas más pequeñas */
-    div h1 {
-        display: none;
-    }
-    
-}
-/* tablets */
-@media (max-width: 740px) {
-    /* Ocultar el h1 en pantallas más pequeñas */
-    .logo {
-        display: none;
+/* Dispositivos medios-grandes. */
+
+@media only screen and (max-width: 951px) {
+
+    main{
+        width:90%;
+        margin-left: 10px;
+        margin-right: 05px;
     }
 
-    nav ul{
-        justify-items: center;
-
-
-    }
-    .contenedor_index_ad {
-        display: grid;
-        grid-template-columns:  1fr 1fr;
-        grid-template-rows:1fr 1fr;
-        gap: 5px;
-        grid-auto-flow: row;
-        grid-template-areas:
-            " info info"
-            " info info"
-            " ad ad"
-            " ad ad";
-        padding: 20px; 
-        background-color: #f2f2f2; 
-    }
-
-}
-
-/* celulares */
-
-@media (min-width:350px) and (max-width:660px){
-    /* estilos al Header */
     header {
-        margin:0;
-        background-color: #cecece;
+        flex-direction: rows;
+        align-items: center;
     }
 
-    /*  Barra de navegacion en Columna, alineo a la izquierda */
+    nav {
+        margin-top: 55px;
+        ul {
+            
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+
+            li {
+                margin-bottom: 10px;
+                background: #eebe64;
+                border-radius: 10px;
+                font-weight: bold;
+            }
+
+            li a:hover {
+                text-decoration: $subrayado;
+                background-color: hwb(160 28% 29%);
+              
+            }
+        }
+
+        ul.show {
+            display: flex;
+        }
+    }
+    .tituloTarjetaIndex{
+        font-weight:0.5rem;
+    }
+.contenedor_index_ad {
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    grid-template-rows:1fr 1fr;
+    gap: 5px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        " info info"
+        " info info"
+        " ad ad"
+        " ad ad";
+    padding: 20px; 
+    background-color: $color-fondo; 
+    }
+    footer{
+        width:90%;
+        margin-left: 10px;
+        margin-right: 05px;
+    }
+
+}
+@media only screen and (max-width: 951px) {
+    .contenedor_tarjetas {
+        display: flex;
+        flex-direction: column;
+
+    }
+    .img_tar{
+        width: 80%;
+    }
+}
+
+
+// Dispositivos medios
+@media (min-width:600px) and (max-width:950px){
+   
+
     nav ul{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-right: 350px;
-        
+            
     }
-    /*  Aumento el tamaño de la barra de navegacion */
-    nav li a{
-        font-size: 2rem;
-     
-    }
+
 
     /*  videos uno debajo del otro. */
     .seccion_videos{
@@ -70,11 +100,7 @@
         flex-direction: column;
     }
 
-    /*Footer en flex orientacion columnas.*/
-    footer{
-        display: flex;
-        flex-direction: column;
-    }
+
 
     /* Seccion inicio presentacion*/
 
@@ -94,70 +120,50 @@
 }
 
 
-/* Medias Queries Pagina Analisis de Datos */
-
-/* Celulares*/
 
 
-@media (min-width:350px) and (max-width:660px){
 
-    .formulario{
-        width:100%;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        border-radius: 5px;
+// Dispositivos Chicos
+@media (min-width: 300px) and (max-width: 599px) {
+
+    header {
+        padding: 45px;
+        margin: 10px 40px;
+        flex-direction: column;
+      
+    }
+    .logo{
+        flex-direction:column;
+        margin: 0px 40px;
+        }
+      nav ul{
+        justify-items: center;
+    
     }
 
-    .analisis{
-        width: 70%;
-        margin-left: 25px;
-        margin-right: 25px;
+    .info>h2, .noticias, .noticias_hijas >h3, .noticias_hijas >p,.datos_contacto {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
 
-    .tablas{
-        width: 100%;
+    footer{
+        display: flex;
+        flex-direction: column;
     }
-    table{
-        width: 90%;
-        margin-left: 50px;
-        margin-right: 50px;
-
-    }
-
-    td,th{
+    .derechos_reservados{
         text-align: center;
-        font-size: 0.65rem;
-        padding: 03px;
-        margin: 3px;
-        text-transform: lowercase;
     }
+
+    .seccion_videos{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+.img_tar{
+   margin-right: 20px;
 }
 
-/* tablets */
-
-@media (min-width:661px) and (max-width:987px){
-    .formulario{
-        margin-top: 30px;
-        margin-bottom: 30px;
-    }
-
-    .analisis{
-        width: 100%;
-        align-items:flex-start;
-        justify-content:flex-start;
-
-
-    }
-    .tablas{
-        width: 100%;
-    }
-    table{
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    .conclusion{
-        margin-left: 10px;
-        margin-right: 10px;
-    }
 }
+
