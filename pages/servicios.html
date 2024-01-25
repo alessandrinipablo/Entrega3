@@ -18,6 +18,10 @@
     <!-- Favicon del sitio web -->
     <link rel="icon" href="../img/favicon.ico">
 
+
+    <!-- Libreria  de animaciones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
     <!-- Conexion con Boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -31,18 +35,20 @@
 <body>
     <!-- ENCABEZADO  -->
     <header>
+        <!-- Logo -->
         <div class="logo">
             <!-- Logo -->
-            <img src="../img/logo.png" alt="Logo" title="Logo" width="100px">
-        </div>
-        <div >
+            <a href="../index.html">
+                <img class="img_logo" src="../img/logo.png" alt="Logo pagina">
+            </a>
             <h1>AgroServicios Inteligentes</h1>
         </div>
+
         <!-- Menu de navegacion -->
         <nav>
             <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="analisisDeDatos.html">DataAgro</a></li>
+                <li></li>
+                <li><a href="analisisDeDatos.html">Data</a></li>
                 <li><a href="servicios.html">Servicios</a></li>
                 <li><a href="noticias.html">Noticias</a></li>
                 <li><a href="galeria.html">Galeria</a></li>
@@ -64,13 +70,13 @@
                 artificial para optimizar el rendimiento en el sector agrícola. Nuestros servicios incluyen:
             </p>
 
-            <ul>
+            <ul class="listas_servicios">
                 <li>Análisis de datos para la toma de decisiones agrícolas.</li>
                 <li>Desarrollo de modelos predictivos para mejorar la producción.</li>
-                <li>Piloto automatico para cosechas</li>
-                <li>Sistemas de Precision Planting para la siembra</li>
-                <li>Banderilleros satelitales para pulverizar</li>
-                <li>Monitoreo y control remoto del clima, plagas y enfermedaes</li>
+                <li>Piloto automatico para cosechas.</li>
+                <li>Sistemas de Precision Planting para la siembra.</li>
+                <li>Banderilleros satelitales para pulverizar.</li>
+                <li>Monitoreo y control remoto del clima, plagas y enfermedaes.</li>
             </ul>
 
             <p>
@@ -125,24 +131,24 @@
 
             </div>
             <div class="datos_contacto">
-                <h3>Datos de Contacto:</h3>
-                <p>Dirección: [TAvenida Siempre Viva]</p>
-                <p>Teléfono: 0303456</p>
-                <p>Email: john@doe.com.ar</p>
+                <!--  aplicando otra libreria de animaciones. -->
+                <h3 class="animate__animated animate__bounce">Contactanos!!</h3>
+                <p>Dirección: San Martin 1067</p>
+                <p>Teléfono: +54 3548 541813</p>
+                <p>Email: agroservices@agroservices.com.ar</p>
 
             </div>    
         </section>
 
 
     </main>
-
     <footer>
         <p class="derechos_reservados"> &copy; <strong>2023 AgroServicios Inteligentes</strong> </p>
         <div class="redes">
-            <img  src="../img/instagram.ico" title=" Instagram " alt="Instagram">
-            <img  src="../img/linkedin.ico" title=" Linkedin " alt="Linkedin">
-            <img  src="../img/twitter.ico" title=" Twitter " alt="Twitter">
-            <img  src="../img/youtube.ico" title=" Youtube " alt="Youtube">
+            <a href="#"> <img class="redes_img" src="../img/instagram.ico" title=" Instagram " alt="Instagram"></a>
+            <a href="#"> <img class="redes_img" src="../img/linkedin.ico" title=" Linkedin " alt="Linkedin"></a>
+            <a href="#"> <img class="redes_img" src="../img/twitter.ico" title=" Twitter " alt="Twitter"></a>
+            <a href="#"> <img class="redes_img" src="../img/youtube.ico" title=" Youtube " alt="Youtube"></a>
         </div>
     </footer>
 
